@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <Button
+        android:id="@+id/backToEvents_button"
+        android:layout_height="28dp"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:background="@layout/buttonshape"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/joinEvent_button"
+        android:layout_alignStart="@+id/joinEvent_button" />
+
+    <TextView android:id="@+id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@+id/event_Image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView android:id="@+id/event_time"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_height="20dp"
+        android:layout_below="@+id/event_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/event_date"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_height="20dp"
+        android:layout_below="@+id/event_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/event_description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@+id/event_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/eventShowMap"
+        android:text="Show map"
+        android:textColor="#ffffff"
+        android:background="@layout/buttonshape"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/backToEvents_button"
+        android:layout_alignLeft="@+id/backToEvents_button"
+        android:layout_alignStart="@+id/backToEvents_button" />
+
+    <Button
+        android:id="@+id/logOff_button"
+        android:layout_height="28dp"
+        android:text="Remove me from event"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:background="@layout/buttonshape"
+        android:layout_above="@+id/eventShowMap"
+        android:layout_alignLeft="@+id/eventShowMap"
+        android:layout_alignStart="@+id/eventShowMap"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/joinEvent_button"
+        android:layout_height="28dp"
+        android:text="Join"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:background="@layout/buttonshape"
+        android:layout_above="@+id/logOff_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+    <TextView android:id="@+id/event_peopleJoined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@+id/event_description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <ImageView
+        android:id="@+id/event_Image"
+        android:layout_height="138dp"
+        android:layout_weight="2"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+    </ImageView>
+
+    <TextView android:id="@+id/event_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_above="@+id/joinEvent_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/event_numberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@+id/event_peopleJoined"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

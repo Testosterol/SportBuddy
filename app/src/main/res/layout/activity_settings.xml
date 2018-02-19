@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/save_button"
+        android:background="@layout/buttonshape"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:background="@layout/buttonshape"
+        android:layout_alignTop="@+id/save_button"
+        android:layout_alignLeft="@+id/save_button"
+        android:layout_alignStart="@+id/save_button"
+        android:layout_marginTop="41dp"
+        android:layout_height="28dp" />
+
+    <CheckBox
+        android:text="Notifications of all events joined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendAllEventsNotifications"
+        android:checked="false"
+        android:layout_below="@+id/sendCurrentDayEventsNotifications"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+    android:text="Notifications of events on current day only"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sendCurrentDayEventsNotifications"
+        style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+        android:checked="false"
+        android:layout_below="@+id/sendNotifications"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="Send Notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendNotifications"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SportBuddy</string>
+    <string name="lokalita_txt">Address of the Event</string>
+    <string name="mapa_tlacidlo">Show map</string>
+</resources>
